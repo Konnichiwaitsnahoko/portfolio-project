@@ -43,6 +43,7 @@
   color: var(--main-color);
   padding: 18px 30px;
   text-transform: uppercase;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .projects {
@@ -81,6 +82,12 @@
   padding-right: 30px;
   padding-bottom: 18px;
   padding-left: 30px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.detail-button:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 767px) {
@@ -96,4 +103,3 @@
     text-align: center;
   }
 }
-
