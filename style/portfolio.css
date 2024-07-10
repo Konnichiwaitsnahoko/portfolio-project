@@ -2,10 +2,25 @@
   --main-color: #b0041a;
   --accent-color: #ffc95f;
   --secondary-color: #ece9e6;
-  --heading-color: #350b10;
-  --default-text-color: rgba(49, 27, 30, 0.7);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --navbar-bg-color: #b0041a; /* Change to your desired background color */
+  --navbar-text-color: #ece9e6; /* Change to your desired text color */
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+  font-family: var(--default-font-family);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: var(--navbar-text-color) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: var(--accent-color) !important;
 }
 
 .hero {
@@ -42,6 +57,7 @@
   font-size: 18px;
   color: var(--main-color);
   padding: 18px 30px;
+  margin: 8px;
   text-transform: uppercase;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
